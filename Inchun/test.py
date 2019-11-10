@@ -12,11 +12,11 @@ api_key = "1FmuBg8TmJiwfSk8v7kigut57VG5pwtbsovBmJDPqCHLQm%2Bbd3uZi9k1hXIswLNsSnX
 
 dust = 'dust'
 
-city = "서울"
+city = "인천"
+
+dust_File = 'dust_Inchun.json'
 
 url_dust = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?sidoName=" + city + "&searchCondition=HOUR&pageNo=1&numOfRows=100&ServiceKey=" + api_key + "&ver=1.3&_returnType=json"
-
-
 
 def dust(request):
 
@@ -56,9 +56,9 @@ def request_dust():
         
     else:
         print(rescode)
-    with open('dust_Seoul.json','w', encoding="utf-8") as make_file:
+    with open( dust_File ,'w', encoding="utf-8") as make_file:
         json.dump(dict, make_file, ensure_ascii=False, indent="\t")
 
 if __name__=='__main__':
-    
+ 
     request_dust()
