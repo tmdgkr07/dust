@@ -14,7 +14,7 @@ dust = 'dust'
 
 city = "서울"
 
-url_dust = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst?sidoName=" + city + "&searchCondition=HOUR&pageNo=1&numOfRows=10&ServiceKey=" + api_key + "&ver=1.3&_returnType=json"
+url_dust = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?sidoName=" + city + "&searchCondition=HOUR&pageNo=1&numOfRows=100&ServiceKey=" + api_key + "&ver=1.3&_returnType=json"
 
 
 

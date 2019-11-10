@@ -3,7 +3,7 @@ import json
 
 CONFIG_FILE="./dust_Seoul.json"
 CONFIG={}
-vliage = 2 
+village = 2 
 """
  0 강남구 
  1 강동구
@@ -28,15 +28,15 @@ def main():
     global CONFIG_FILE
     global CONFIG
     CONFIG = readConfig(CONFIG_FILE)
-    cityName = CONFIG['list'][vliage]['cityName']
-    pm10     = CONFIG['list'][vliage]['pm10Value']
-    pm25     = CONFIG['list'][vliage]['pm25Value']
-    no2      = CONFIG['list'][vliage]['no2Value']
-    so2      = CONFIG['list'][vliage]['so2Value']
-    co       = CONFIG['list'][vliage]['coValue']
-    dataTime = CONFIG['list'][vliage]['dataTime']
+    stationName = CONFIG['list'][village]['stationName']
+    pm10        = CONFIG['list'][village]['pm10Value']
+    pm25        = CONFIG['list'][village]['pm25Value']
+    no2         = CONFIG['list'][village]['no2Value']
+    so2         = CONFIG['list'][village]['so2Value']
+    co          = CONFIG['list'][village]['coValue']
+    dataTime    = CONFIG['list'][village]['dataTime']
     
-    print(cityName)
+    print(stationName)
     print(pm10)
     print(pm25)
     print(no2)
